@@ -25,3 +25,7 @@ jobs:
             curl -s -H "Authorization: token ${{ secrets.ACTION_TOKEN }}" -X PATCH "https://api.github.com/repos/${{ github.repository }}/issues/$ISSUE_NUMBER" -d '{"state": "closed"}'
           fi
         shell: bash
+        
+branding:
+  icon: box
+  color: yellow
